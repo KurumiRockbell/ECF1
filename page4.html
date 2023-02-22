@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="web-title">ECF1</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body class="bg-dark">
+
+    <!--HEADER SECTION-->
+    <header class="p-2 bg-success text-center">
+        <div class="container">
+            <h1 class="text-white" id="page-title">Page</h1>
+        </div>
+    </header>
+
+    <!--NAVBAR SECTION-->
+    <div class="bg-secondary">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Page d'accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="page1.html">Page 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="page2.html">Page 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="page3.html">Page 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="page4.html"><span class="text-dark">Page 4</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="page5.html">Page 5</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!--MAIN SECTION-->
+    <main class="container-fluid mt-4 core_height">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner w-100">
+                <div class="carousel-item active">
+                    <img src="assets/img/b&w1.jpg" class="d-block img-fluid" alt="Building 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>NYC Memorial</h5>
+                        <p>Photographe : Mike Hindl</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/b&w2.jpg" class="d-block img-fluid" alt="Building 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Austin view</h5>
+                        <p>Photographe : Jane Smith</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/b&w3.jpg" class="d-block img-fluid" alt="Building 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Roosevelt Tower</h5>
+                        <p>Photographe : Sean Lee</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/b&w4.jpg" class="d-block img-fluid" alt="Building 4">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Plaza NYC</h5>
+                        <p>Photographe : Alice Deykaw</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/b&w5.jpg" class="d-block img-fluid" alt="Building 5">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Capri Theatre</h5>
+                        <p>Photographe : Michael Austin</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Precedent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
+        </div>
+    </main>
+
+
+    <!-- MODAL SECTION -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">TITLE</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="modal-body" class="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+    <div class="row">
+        <div class="col text-bg-secondary text-center p-1 rounded-3">
+            <button id="modalbtn" type="button" class="btn btn-secondary"></button>
+        </div>
+    </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
